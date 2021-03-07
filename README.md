@@ -22,7 +22,7 @@ https://github.com/mirrorlessmind/letscode
 
 
 Screen Shot for Initial page:
-![home image](assets/images/highscore.jpg?raw=true "Home Image")
+![home image](assets/images/home.jpg?raw=true "Home Image")
 ![Questions image](assets/images/questions.jpg?raw=true "Questions")
 Screen Shot Link for high score page:
 ![highscore image](assets/images/highscore.jpg?raw=true "High Score Image")
