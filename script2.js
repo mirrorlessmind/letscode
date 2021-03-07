@@ -9,19 +9,19 @@ var tryAgain = document.querySelector("#tryAgain");
       location.reload();
 });
 // Parsing from local stroage to create high scores table
-  var allScores = localStorage.getItem("allScores");
-    allScores = JSON.parse(allScores);
-    if (allScores !== null) {
+  var allScores = localStorage.getItem("allPlayers");
+    allPlayers = JSON.parse(allPlayers);
+    if (allPlayers !== null) {
 
-    for (var i = 0; i < allScores.length; i++) {
+    for (var i = 0; i < allPlayers.length; i++) {
 
         var createLi = document.createElement("li");
-        createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+        createLi.textContent = allPlayers[i].initials + " " + allPlayers[i].score;
         highScore.appendChild(createLi);
 
     }
 }
 // Created to return to previos page using index link
-  goBack.addEventListener("click", function () {
+  tryAgain.addEventListener("click", function () {
       window.location.replace("./index.html");
 });
