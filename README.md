@@ -17,9 +17,17 @@ This project has been deployed to GitHub Pages. To get this project up and runni
 
 The published page:
 https://mirrorlessmind.github.io/letscode/
+Repository
+https://github.com/mirrorlessmind/letscode
 
-Here is my Screen Shot Link for high score page:
+
+Screen Shot for Initial page:
+![home image](assets/images/highscore.jpg?raw=true "Home Image")
+![Questions image](assets/images/questions.jpg?raw=true "Questions")
+Screen Shot Link for high score page:
 ![highscore image](assets/images/highscore.jpg?raw=true "High Score Image")
+Questions Page
+
 
 
 
