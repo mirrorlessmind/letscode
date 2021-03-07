@@ -137,7 +137,7 @@ function allDone() {
         var timeRemaining = secondsLeft;
         var createP2 = document.createElement("p");
         clearInterval(holdInterval);
-        createP.textContent = "Your rockin score is: " + timeRemaining;
+        createP2.textContent = "Your rockin score is: " + timeRemaining;
 
         questionsDiv.appendChild(createP2);
     }
@@ -183,9 +183,9 @@ function allDone() {
             if (allPlayers === null) {
                 allPlayers = [];
             } else {
-                allScores = JSON.parse(allPlayers);
+                allPlayers = JSON.parse(allPlayers);
             }
-            allScores.push(finalScore);
+            allPlayers.push(finalScore);
             var newScore = JSON.stringify(allPlayers);
             localStorage.setItem("allPlayers", newScore);
             // Redirect to use local storage
