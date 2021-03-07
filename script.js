@@ -101,11 +101,12 @@ function compare(event) {
         }
 
     }
-    // Informs user of the number of question that they are on using append
+    // If Statement Informs user of the number of question that they are on using append
+   // All done will append last page with user stats
     questionIndex++;
 
     if (questionIndex >= questions.length) {
-        // All done will append last page with user stats
+       
         allDone();
         createDiv.textContent = "You did it!" + " " + " Your Results  " + score + "/" + questions.length + " Correct!";
     } else {
@@ -114,19 +115,18 @@ function compare(event) {
     questionsDiv.appendChild(createDiv);
 
 }
-// Function When completed
+// Function When completed defined as All Done
 function allDone() {
     questionsDiv.innerHTML = "";
     currentTime.innerHTML = "";
 
-    // Heading:
     var createH1 = document.createElement("h1");
     createH1.setAttribute("id", "createH1");
     createH1.textContent = "All Done!"
 
     questionsDiv.appendChild(createH1);
 
-    // Paragraph
+    // Creates element for Paragraph
     var createP = document.createElement("p");
     createP.setAttribute("id", "createP");
 
@@ -142,14 +142,14 @@ function allDone() {
         questionsDiv.appendChild(createP2);
     }
 
-    // Label
+    // Header for initials
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
 
     questionsDiv.appendChild(createLabel);
 
-    // input
+    // User definied inputs for score
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
@@ -157,7 +157,7 @@ function allDone() {
 
     questionsDiv.appendChild(createInput);
 
-    // submit
+    // Collection of data for submitting to local storage
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "submit");
     createSubmit.setAttribute("id", "Submit");
@@ -165,7 +165,7 @@ function allDone() {
 
     questionsDiv.appendChild(createSubmit);
 
-    // Event listener to capture initials and local storage for initials and score
+    // Event listener for local storage of user data for highscore page reference
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
