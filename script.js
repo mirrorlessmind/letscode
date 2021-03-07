@@ -27,7 +27,7 @@ var questions = [
     },
     
 ];
-// Declared variables
+// Variables to be used for generating equations
 var score = 0;
 var questionIndex = 0;
 
@@ -45,7 +45,7 @@ var penalty = 10;
 // Unordered List for new elements
 var ulCreate = document.createElement("ul");
 
-// Event listerner created to calculate on button clicking calculates timer
+// Event listerner created to calculate on button clicking calculates timer and not return negative number
 timer.addEventListener("click", function () {
     
     if (holdInterval === 0) {
@@ -67,7 +67,7 @@ timer.addEventListener("click", function () {
 function render(questionIndex) {
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
-    // Loops created based on variables
+    // Loops created based on variables based on array information
     for (var i = 0; i < questions.length; i++) {
         var userQuestion = questions[questionIndex].question;
         var userChoices = questions[questionIndex].choices;
@@ -82,7 +82,7 @@ function render(questionIndex) {
         listItem.addEventListener("click", (compare));
     })
 }
-// Creates event to compare lists vs boolean
+// Creates event to compare lists matches vs boolean true false
 function compare(event) {
     var element = event.target;
 
@@ -95,13 +95,13 @@ function compare(event) {
             score++;
             createDiv.textContent = "Correct! The answer is:  " + questions[questionIndex].answer; 
         } else {
-            // Will deduct -5 seconds off secondsLeft for wrong answers
+            // Penalizes users for time
             secondsLeft = secondsLeft - penalty;
             createDiv.textContent = "Incorrect! The correct answer is:  " + questions[questionIndex].answer;
         }
 
     }
-    // Informs user of the number of question that they are on
+    // Informs user of the number of question that they are on using append
     questionIndex++;
 
     if (questionIndex >= questions.length) {
@@ -171,7 +171,7 @@ function allDone() {
 
         if (initials === null) {
 
-            console.log("No value entered!");
+            console.log("Add Initals");
 
         } else {
             var finalScore = {
