@@ -3,12 +3,11 @@ Created a fun quiz game for beginners
 
 Here we go! 
 
-04 Web APIs: Code Quiz
-
+##App Description
  This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
 
-User Story
+
+###User Story
 This is to help give the user the concept behind the code. In this case we want to test a user's coding knowledge and save the results for a fun competitive comparasion.
 
 This application emphasizes the use of Javascript and local storage to interact with user with emphasis on a timer, multiple reference variables, 
@@ -32,7 +31,7 @@ Questions Page
 
 
 
-###This project contains query selectors, conditional statements, page resets, html button references, incorporating multiple page references.
+####This project contains query selectors, conditional statements, page resets, html button references, incorporating multiple page references.
 
 
 
