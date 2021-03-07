@@ -9,7 +9,7 @@ var tryAgain = document.querySelector("#tryAgain");
       location.reload();
 });
 // Parsing from local stroage to create high scores table
-  var allScores = localStorage.getItem("allPlayers");
+  var allPlayers = localStorage.getItem("allPlayers");
     allPlayers = JSON.parse(allPlayers);
     if (allPlayers !== null) {
 
