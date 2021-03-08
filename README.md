@@ -1,13 +1,13 @@
-# letscode
-Created a fun quiz game for beginners
+# Let's Code
+The mission is to create a fun coding quiz game for beginners
 
 Here we go! 
 
-##App Description
+## App Description 
  This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
 
 
-###User Story
+### User Story 
 This is to help give the user the concept behind the code. In this case we want to test a user's coding knowledge and save the results for a fun competitive comparasion.
 
 This application emphasizes the use of Javascript and local storage to interact with user with emphasis on a timer, multiple reference variables, 
@@ -31,7 +31,12 @@ Questions Page
 
 
 
-####This project contains query selectors, conditional statements, page resets, html button references, incorporating multiple page references.
+## App Description\###This project contains:
+Query selectors
+Conditional statements
+Page resets
+Html button references
+Incorporating multiple page references.
 
 
 
